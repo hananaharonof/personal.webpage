@@ -1198,3 +1198,5 @@ html[data-vt-dir="back"]::view-transition-new(learn-panel) { animation-name: vt-
 @media (max-width: 960px) { .shelf-courses { grid-auto-columns: calc((100% - var(--gap)) / 2); } }
 @media (max-width: 560px) { .shelf-courses { grid-auto-columns: 82%; } }
 @media (prefers-reduced-motion: reduce) { .learn-pill, .course-media, .course-media img { transition: none; } }
+
+.all-visible .shelf-bar--bare, .no-js .shelf-bar--bare { display: none; }
