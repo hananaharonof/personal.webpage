@@ -587,16 +587,36 @@
   }
 
   var emailBtn = document.querySelector('.email-btn');
+  // navigator.clipboard only exists on secure (https) pages; fall back to execCommand elsewhere.
+  function legacyCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (err) {}
+    document.body.removeChild(ta);
+    return ok;
+  }
+
   if (emailBtn) {
     emailBtn.addEventListener('click', function (e) {
       e.preventDefault();
-      if (!navigator.clipboard) return;
+      var email = emailBtn.dataset.email;
       var label = emailBtn.querySelector('.email-label');
-      navigator.clipboard.writeText(emailBtn.dataset.email).then(function () {
-        label.textContent = 'Copied ' + emailBtn.dataset.email;
+      function done(ok) {
+        label.textContent = ok ? 'Copied ' + email : email;
         emailBtn.classList.add('copied');
         setTimeout(function () { label.textContent = 'Email'; emailBtn.classList.remove('copied'); }, 2500);
-      }).catch(function () {});
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).then(function () { done(true); }, function () { done(legacyCopy(email)); });
+      } else {
+        done(legacyCopy(email));
+      }
     });
   }
 </script>
