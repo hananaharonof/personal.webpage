@@ -68,7 +68,7 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
               GitHub
             </a>
-            <a href="mailto:hananah@gmail.com" class="email-btn" data-email="hananah@gmail.com" title="Opens your mail client and copies the address">
+            <a href="#" role="button" class="email-btn" data-email="hananah@gmail.com" title="Copy email address">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 3.2V18h18V7.2l-9 6.3-9-6.3zM4.4 6l7.6 5.3L19.6 6H4.4z"/></svg>
               <span class="email-label">Email</span>
             </a>
@@ -285,7 +285,7 @@
             <div>
               <p>
                 My master's degree focused on reinforcement learning and, above all, on Deep Q-Networks.
-                The final paper, <em>Deep Reinforcement Learning: Theory and Current Applications</em>,
+                The final paper, <em>Deep Reinforcement Learning: Theory, Applications and a Look to the Future</em>,
                 builds the theory up from Markov decision processes, dynamic programming, Monte Carlo and
                 temporal-difference methods to DQN and its successors, then surveys where the field was
                 heading. The accompanying project is a DQN agent that learns to play Pac-Man from raw
@@ -435,7 +435,7 @@
           <div class="entry-head">
             <div class="logo"><img src="img/icons/open_uni.png" alt="The Open University of Israel"></div>
             <div class="entry-title">
-              <div class="date">2013 &ndash; 2018</div>
+              <div class="date">2013 &ndash; 2019</div>
               <h3>M.Sc. Computer Science</h3>
               <div class="meta">The Open University of Israel &middot; GPA 96 &middot; Summa cum laude</div>
             </div>
@@ -587,8 +587,10 @@
   }
 
   var emailBtn = document.querySelector('.email-btn');
-  if (emailBtn && navigator.clipboard) {
-    emailBtn.addEventListener('click', function () {
+  if (emailBtn) {
+    emailBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!navigator.clipboard) return;
       var label = emailBtn.querySelector('.email-label');
       navigator.clipboard.writeText(emailBtn.dataset.email).then(function () {
         label.textContent = 'Copied ' + emailBtn.dataset.email;

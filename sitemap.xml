@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.hananaharonof.com/</loc>
+    <loc>http://hananaharonof.com/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#about</loc>
+    <loc>http://hananaharonof.com/#about</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#experience</loc>
+    <loc>http://hananaharonof.com/#experience</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#ai</loc>
+    <loc>http://hananaharonof.com/#ai</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#patents</loc>
+    <loc>http://hananaharonof.com/#patents</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#events</loc>
+    <loc>http://hananaharonof.com/#events</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#education</loc>
+    <loc>http://hananaharonof.com/#education</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/#references</loc>
+    <loc>http://hananaharonof.com/#references</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.hananaharonof.com/docs/deep-reinforcement-learning-msc-paper.pdf</loc>
+    <loc>http://hananaharonof.com/docs/deep-reinforcement-learning-msc-paper.pdf</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>never</changefreq>
     <priority>0.3</priority>
