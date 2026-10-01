@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Inconsolata&display=swap">
   <script>document.documentElement.classList.replace("no-js","js");</script>
-  <link rel="stylesheet" href="site.css?v=2026-10-05">
+  <link rel="stylesheet" href="site.css?v=2026-10-06">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#ai">AI</a></li>
-        <li><a href="#reading">Reading</a></li>
+        <li><a href="#learning">Learning</a></li>
         <li><a href="#patents">Patents</a></li>
         <li><a href="#events">Events</a></li>
         <li><a href="#education">Education</a></li>
@@ -357,14 +357,21 @@
     </div>
   </section>
 
-  <section class="section" id="reading">
+  <section class="section" id="learning">
     <div class="container">
       <div class="section-head reveal">
-        <h2>Reading List</h2>
-        <p>Technical books that shaped how I build software, and the one on my desk right now.</p>
+        <h2>Learning</h2>
+        <p>Books and courses that shaped how I build software, and what I am learning right now.</p>
       </div>
 
-      <article class="now-reading card reveal">
+      <div class="learn-tabs reveal" role="tablist" aria-label="Learning">
+        <button class="learn-tab" role="tab" id="learn-tab-books" aria-controls="learn-books" aria-selected="true">Books</button>
+        <button class="learn-tab" role="tab" id="learn-tab-courses" aria-controls="learn-courses" aria-selected="false" tabindex="-1">Courses</button>
+        <span class="learn-pill" aria-hidden="true"></span>
+      </div>
+
+      <div class="learn-panel active reveal" role="tabpanel" id="learn-books" aria-labelledby="learn-tab-books">
+      <article class="now-reading card">
         <a class="book-cover" href="https://www.manning.com/books/agent-design-patterns" target="_blank" rel="noopener" aria-label="Agent Design Patterns by Peter Belcak">
           <img src="img/books/agent-design-patterns.jpg" alt="" loading="lazy" decoding="async">
         </a>
@@ -381,43 +388,114 @@
         </div>
       </article>
 
-      <div class="shelf">
-        <article class="book reveal">
-          <a class="book-cover" href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener" aria-label="Computer Networking: A Top-Down Approach by James Kurose &amp; Keith Ross">
-            <img src="img/books/computer-networking.jpg" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="book-theme">Foundations</div>
-          <h3><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener">Computer Networking: A Top-Down Approach</a></h3>
-          <div class="book-author">James Kurose &amp; Keith Ross &middot; Pearson</div>
-          <p>Builds networking from the applications we use down to the wire. It is still the mental model I reach for when something breaks between services.</p>
-        </article>
-        <article class="book reveal">
-          <a class="book-cover" href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener" aria-label="Clean Code by Robert C. Martin">
-            <img src="img/books/clean-code.jpg" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="book-theme">Craft</div>
-          <h3><a href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener">Clean Code</a></h3>
-          <div class="book-author">Robert C. Martin &middot; Prentice Hall</div>
-          <p>Not every rule has aged well, but its central idea, that code is read far more often than it is written, shapes how I review code and mentor engineers.</p>
-        </article>
-        <article class="book reveal">
-          <a class="book-cover" href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener" aria-label="Spring Boot in Action by Craig Walls">
-            <img src="img/books/spring-boot-in-action.jpg" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="book-theme">Java &amp; Spring</div>
-          <h3><a href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener">Spring Boot in Action</a></h3>
-          <div class="book-author">Craig Walls &middot; Manning</div>
-          <p>A practical guide to the conventions behind Spring Boot, the framework under most of the Java services I have built.</p>
-        </article>
-        <article class="book reveal">
-          <a class="book-cover" href="https://dataintensive.net/" target="_blank" rel="noopener" aria-label="Designing Data-Intensive Applications by Martin Kleppmann">
-            <img src="img/books/ddia.jpg" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="book-theme">Systems &amp; data</div>
-          <h3><a href="https://dataintensive.net/" target="_blank" rel="noopener">Designing Data-Intensive Applications</a></h3>
-          <div class="book-author">Martin Kleppmann &middot; O'Reilly</div>
-          <p>The clearest map of the trade-offs in storage, replication and stream processing. If I could hand one book to every backend engineer, it would be this one.</p>
-        </article>
+      <div class="shelf-wrap">
+        <div class="shelf-bar">
+          <span class="shelf-title">On the shelf</span>
+          <span class="shelf-count" aria-live="polite"></span>
+          <div class="shelf-nav">
+            <button class="shelf-btn" data-dir="-1" aria-label="Previous books"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="shelf-btn" data-dir="1" aria-label="Next books"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="shelf" tabindex="0" role="region" aria-label="Books on the shelf, scroll sideways for more">
+          <article class="book">
+            <a class="book-cover" href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" rel="noopener" aria-label="Reinforcement Learning: An Introduction by Richard S. Sutton &amp; Andrew G. Barto">
+              <img src="img/books/rl-sutton-barto.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Reinforcement learning</div>
+            <h3><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" rel="noopener">Reinforcement Learning: An Introduction</a></h3>
+            <div class="book-author">Richard S. Sutton &amp; Andrew G. Barto &middot; MIT Press, 2018</div>
+            <p>The foundation of my master's work. Its path from Markov decision processes and dynamic programming to temporal-difference learning is the one my final paper followed.</p>
+          </article>
+          <article class="book">
+            <a class="book-cover" href="https://dataintensive.net/" target="_blank" rel="noopener" aria-label="Designing Data-Intensive Applications by Martin Kleppmann">
+              <img src="img/books/ddia.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Systems &amp; data</div>
+            <h3><a href="https://dataintensive.net/" target="_blank" rel="noopener">Designing Data-Intensive Applications</a></h3>
+            <div class="book-author">Martin Kleppmann &middot; O'Reilly, 2017</div>
+            <p>The clearest map of the trade-offs in storage, replication and stream processing. If I could hand one book to every backend engineer, it would be this one.</p>
+          </article>
+          <article class="book">
+            <a class="book-cover" href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener" aria-label="Computer Networking: A Top-Down Approach by James Kurose &amp; Keith Ross">
+              <img src="img/books/computer-networking.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Foundations</div>
+            <h3><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener">Computer Networking: A Top-Down Approach</a></h3>
+            <div class="book-author">James Kurose &amp; Keith Ross &middot; Pearson, 2016</div>
+            <p>Builds networking from the applications we use down to the wire. It is still the mental model I reach for when something breaks between services.</p>
+          </article>
+          <article class="book">
+            <a class="book-cover" href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener" aria-label="Spring Boot in Action by Craig Walls">
+              <img src="img/books/spring-boot-in-action.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Java &amp; Spring</div>
+            <h3><a href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener">Spring Boot in Action</a></h3>
+            <div class="book-author">Craig Walls &middot; Manning, 2015</div>
+            <p>A practical guide to the conventions behind Spring Boot, the framework under most of the Java services I have built.</p>
+          </article>
+          <article class="book">
+            <a class="book-cover" href="http://aima.cs.berkeley.edu/" target="_blank" rel="noopener" aria-label="Artificial Intelligence: A Modern Approach by Stuart Russell &amp; Peter Norvig">
+              <img src="img/books/aima.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Classical AI</div>
+            <h3><a href="http://aima.cs.berkeley.edu/" target="_blank" rel="noopener">Artificial Intelligence: A Modern Approach</a></h3>
+            <div class="book-author">Stuart Russell &amp; Peter Norvig &middot; Pearson, 2010</div>
+            <p>The textbook behind my first AI course at the Hebrew University. The search, planning and constraint satisfaction in its pages became my first AI projects.</p>
+          </article>
+          <article class="book">
+            <a class="book-cover" href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener" aria-label="Clean Code by Robert C. Martin">
+              <img src="img/books/clean-code.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Craft</div>
+            <h3><a href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener">Clean Code</a></h3>
+            <div class="book-author">Robert C. Martin &middot; Prentice Hall, 2008</div>
+            <p>Not every rule has aged well, but its central idea, that code is read far more often than it is written, shapes how I review code and mentor engineers.</p>
+          </article>
+        </div>
+      </div>
+      </div>
+
+      <div class="learn-panel reveal" role="tabpanel" id="learn-courses" aria-labelledby="learn-tab-courses">
+      <div class="shelf-wrap">
+        <div class="shelf-bar">
+          <span class="shelf-title">Courses</span>
+          <span class="shelf-count" aria-live="polite"></span>
+          <div class="shelf-nav">
+            <button class="shelf-btn" data-dir="-1" aria-label="Previous courses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="shelf-btn" data-dir="1" aria-label="Next courses"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
+        <div class="shelf shelf-courses" tabindex="0" role="region" aria-label="Online courses, scroll sideways for more">
+          <article class="book course">
+            <a class="course-media" href="https://www.coursera.org/learn/generative-ai-with-llms" target="_blank" rel="noopener" aria-label="Generative AI with Large Language Models">
+              <img src="img/courses/genai-llms.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Generative AI</div>
+            <h3><a href="https://www.coursera.org/learn/generative-ai-with-llms" target="_blank" rel="noopener">Generative AI with Large Language Models</a></h3>
+            <div class="book-author">DeepLearning.AI &amp; AWS &middot; Coursera</div>
+            <p>How large language models are trained, fine-tuned and evaluated, from the transformer to reinforcement learning from human feedback, which ties straight back to the reinforcement learning of my master's.</p>
+          </article>
+          <article class="book course">
+            <a class="course-media" href="https://www.udemy.com/course/apache-spark-for-java-developers/" target="_blank" rel="noopener" aria-label="Apache Spark for Java Developers">
+              <img src="img/courses/spark-java.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Big data</div>
+            <h3><a href="https://www.udemy.com/course/apache-spark-for-java-developers/" target="_blank" rel="noopener">Apache Spark for Java Developers</a></h3>
+            <div class="book-author">Richard Chesterwood &amp; Matt Greencroft &middot; Udemy</div>
+            <p>Large-scale data processing from a Java developer's point of view: functional-style jobs, the RDD and DataFrame APIs, Spark SQL and SparkML on big datasets.</p>
+          </article>
+          <article class="book course">
+            <a class="course-media" href="https://www.coursera.org/learn/scala-functional-programming" target="_blank" rel="noopener" aria-label="Functional Programming Principles in Scala">
+              <img src="img/courses/scala-fp.jpg" alt="" loading="lazy" decoding="async">
+            </a>
+            <div class="book-theme">Functional programming</div>
+            <h3><a href="https://www.coursera.org/learn/scala-functional-programming" target="_blank" rel="noopener">Functional Programming Principles in Scala</a></h3>
+            <div class="book-author">Martin Odersky, EPFL &middot; Coursera</div>
+            <p>Martin Odersky teaching functional thinking in the language he designed. It changed how I write Java too: immutable data, small pure functions and expressions over statements.</p>
+          </article>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -746,7 +824,7 @@
   window.addEventListener('scroll', setProgress, { passive: true });
   setProgress();
 
-  document.querySelectorAll('.pat-granted, .edu, .xp, .shelf, .timeline').forEach(function (group) {
+  document.querySelectorAll('.pat-granted, .edu, .xp, .timeline').forEach(function (group) {
     Array.prototype.forEach.call(group.children, function (el, i) {
       el.style.transitionDelay = Math.min(i, 5) * 90 + 'ms';
     });
@@ -895,6 +973,91 @@
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(function (es) { es.forEach(function (en) { en.isIntersecting ? play() : stop(); }); }, { threshold: 0.4 }).observe(spot);
     }
+  })();
+
+  var shelfRefreshers = [];
+  document.querySelectorAll('.shelf-wrap').forEach(function (wrap) {
+    var track = wrap.querySelector('.shelf');
+    var items = Array.prototype.slice.call(track.querySelectorAll('.book'));
+    var count = wrap.querySelector('.shelf-count');
+    function step() {
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      var w = items[0].getBoundingClientRect().width;
+      return w ? w + gap : 1;
+    }
+    function perView() { return Math.max(1, Math.round(track.clientWidth / step())); }
+    function first() { return Math.round(track.scrollLeft / step()); }
+    function maxFirst() { return Math.max(0, items.length - perView()); }
+    var pos = 0;
+    function go(index) {
+      pos = index;
+      var behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      track.scrollTo({ left: index * step(), behavior: behavior });
+      render(index);
+    }
+    function move(dir) {
+      var f = pos, m = maxFirst();
+      var next = f + dir;
+      if (next > m) next = 0;
+      if (next < 0) next = m;
+      go(next);
+    }
+    function render(f) {
+      var pv = perView();
+      f = Math.min(f, maxFirst());
+      count.textContent = (f + 1) + '\u2013' + Math.min(items.length, f + pv) + ' of ' + items.length;
+      wrap.classList.toggle('all-visible', items.length <= pv);
+    }
+    function update() { if (!track.clientWidth) return; pos = Math.min(first(), maxFirst()); render(pos); }
+    wrap.querySelectorAll('.shelf-btn').forEach(function (b) {
+      b.addEventListener('click', function () { move(parseInt(b.dataset.dir, 10)); });
+    });
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); move(1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); move(-1); }
+    });
+    var t = null;
+    track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(update, 60); }, { passive: true });
+    window.addEventListener('resize', update);
+    shelfRefreshers.push(update);
+    update();
+  });
+
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.learn-tab'));
+    if (!tabs.length) return;
+    var bar = document.querySelector('.learn-tabs');
+    var pill = bar.querySelector('.learn-pill');
+    function placePill(t) {
+      pill.style.width = t.offsetWidth + 'px';
+      pill.style.transform = 'translateX(' + t.offsetLeft + 'px)';
+    }
+    function select(i, focus) {
+      var current = tabs.findIndex(function (t) { return t.getAttribute('aria-selected') === 'true'; });
+      function apply() {
+        tabs.forEach(function (t, j) {
+          var on = j === i;
+          t.setAttribute('aria-selected', on);
+          t.tabIndex = on ? 0 : -1;
+          document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+        });
+        placePill(tabs[i]);
+        shelfRefreshers.forEach(function (f) { f(); });
+      }
+      if (current === i) apply(); else withViewTransition(apply, i < current ? 'back' : 'fwd');
+      if (focus) tabs[i].focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('keydown', function (e) {
+        var n = tabs.length;
+        if (e.key === 'ArrowRight') { e.preventDefault(); select((i + 1) % n, true); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); select((i - 1 + n) % n, true); }
+      });
+    });
+    window.addEventListener('resize', function () { placePill(tabs.find(function (t) { return t.getAttribute('aria-selected') === 'true'; })); });
+    placePill(tabs[0]);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { placePill(tabs.find(function (t) { return t.getAttribute('aria-selected') === 'true'; })); });
   })();
 </script>
 </body>
