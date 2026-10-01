@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +7,19 @@
   <meta name="description" content="Hanan Aharonof, Software Architect and AI Lead at FundGuard, one of its founding engineers. 18 years building enterprise and cloud software at FundGuard, Salesforce and VMware. Three granted patents.">
   <meta property="og:title" content="Hanan Aharonof">
   <meta property="og:description" content="Software Architect and AI Lead at FundGuard, founding team. Three granted patents in AI data systems and cloud monitoring.">
-  <meta property="og:image" content="img/portrait.jpg">
+  <meta property="og:image" content="http://hananaharonof.com/img/portrait.jpg">
+  <meta property="og:image:width" content="1715">
+  <meta property="og:image:height" content="2093">
+  <meta property="og:url" content="http://hananaharonof.com/">
+  <meta property="og:site_name" content="Hanan Aharonof">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="http://hananaharonof.com/">
   <meta property="og:type" content="profile">
   <link rel="icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Inconsolata&display=swap">
-  <link rel="stylesheet" href="site.css?v=2026-10-01g">
+  <script>document.documentElement.classList.replace("no-js","js");</script>
+  <link rel="stylesheet" href="site.css?v=2026-10-05">
 </head>
 <body>
 
@@ -26,6 +33,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#ai">AI</a></li>
+        <li><a href="#reading">Reading</a></li>
         <li><a href="#patents">Patents</a></li>
         <li><a href="#events">Events</a></li>
         <li><a href="#education">Education</a></li>
@@ -41,7 +49,9 @@
     <div class="container">
       <div class="hero-grid">
         <div class="portrait-wrap hero-in" data-tilt>
-          <img class="portrait" src="img/portrait-bw.jpg" alt="Hanan Aharonof">
+          <div class="portrait-frame" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA4KCw0LCQ4NDA0QDw4RFiQXFhQUFiwgIRokNC43NjMuMjI6QVNGOj1OPjIySGJJTlZYXV5dOEVmbWVabFNbXVn/2wBDAQ8QEBYTFioXFypZOzI7WVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVlZWVn/wAARCAAdABgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDJuFJurtQ3RAvI47UywgBkQMSyg5Jxwa6TR9JUyy3+osBBI26OM9x711LRRSWTBYhHlSBgAEU1G6C9jzi6dVnkWJVUEDhRRWlfabbR6VDeIxE7jB9DRRawXuaEMy6rpVpEr7ZIJAHGedvrXUiWJ4sRyK2Bjg15XNdSW1pmI7WL8mqrajdwN5sM7xseeDxTixM6DVJXFisIPyxSupP4mis0SPJpkLu25pSzsfeiiW4H/9k=)">
+            <img class="portrait" src="img/portrait.jpg" alt="Hanan Aharonof" width="1715" height="2093" fetchpriority="high" decoding="async">
+          </div>
         </div>
         <div>
           <div class="eyebrow hero-in">Hi, I'm</div>
@@ -86,246 +96,327 @@
         <p>From performance labs at Intel to a founding seat at a fintech startup, with cloud, data and AI work in between.</p>
       </div>
 
-      <div class="timeline">
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/fundguard.png" alt="FundGuard"></div>
-            <div class="entry-title">
-              <div class="date">2018 &ndash; Present</div>
-              <h3>Software Architect &amp; AI Lead</h3>
-              <div class="meta">FundGuard &middot; Tel Aviv &middot; Principal Software Engineer, Platform team, 2018 &ndash; 2024 &middot; Software Architect since 2024</div>
+      <div class="xp">
+        <div class="xp-line" aria-hidden="true"><span class="xp-fill"></span></div>
+        <article class="xp-row reveal">
+          <aside class="xp-aside">
+            <div class="xp-sticky">
+              <div class="logo"><img src="img/icons/fundguard.png" alt="FundGuard"></div>
+              <div class="xp-company">FundGuard</div>
+              <div class="xp-dates">2018 &ndash; Present</div>
             </div>
-          </div>
-          <p>
-            FundGuard is a cloud-native investment accounting platform for asset managers, asset owners,
-            custodian banks and fund administrators. It runs mutual funds and ETFs, alternatives,
-            insurance and pension books on one system, is used by institutions such as State Street, and was named best accounting system provider in the 2026 Waters Rankings.
-          </p>
-          <p>
-            I joined in 2018 as one of the first engineers and spent six years as a principal engineer
-            on the Platform team, shaping the system from its first commit into a large-scale,
-            multi-tenant, big-data platform. That work spanned nearly every layer: the build and CI
-            system, automation, infrastructure, fintech domain logic, security, performance and
-            durability.
-          </p>
-          <p>
-            In 2024 I became the company's software architect. I own the technical direction of the
-            platform, the design of new domains and services, and the standards that keep a
-            fast-growing engineering team building one coherent system.
-          </p>
-          <p>
-            Today I also lead FundGuard's AI efforts, from making existing features work with large
-            language models to building agents into the product itself, so that users can operate an
-            investment accounting platform more easily and more effectively. I lead design across teams
-            and mentor engineers so that high-quality code is the norm rather than the exception.
-          </p>
-          <div class="tags">
-            <span class="tag">Architecture</span><span class="tag">LLMs &amp; Agents</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Kubernetes</span>
-            <span class="tag">Elasticsearch</span><span class="tag">Kafka</span><span class="tag">AI / ML</span>
-            <span class="tag">Fintech</span><span class="tag">Multi-cloud</span>
+          </aside>
+          <div class="card xp-card">
+            <h3>Software Architect &amp; AI Lead</h3>
+              <div class="meta">Tel Aviv &middot; Principal Software Engineer, Platform team, 2018 &ndash; 2024 &middot; Software Architect since 2024</div>
+            <p>
+              FundGuard is a cloud-native investment accounting platform for asset managers, asset owners,
+              custodian banks and fund administrators. It runs mutual funds and ETFs, alternatives,
+              insurance and pension books on one system, is used by institutions such as State Street, and was named best accounting system provider in the 2026 Waters Rankings.
+            </p>
+            <p>
+              I joined in 2018 as one of the first engineers and spent six years as a principal engineer
+              on the Platform team, shaping the system from its first commit into a large-scale,
+              multi-tenant, big-data platform. That work spanned nearly every layer: the build and CI
+              system, automation, infrastructure, fintech domain logic, security, performance and
+              durability.
+            </p>
+            <p>
+              In 2024 I became the company's software architect. I own the technical direction of the
+              platform, the design of new domains and services, and the standards that keep a
+              fast-growing engineering team building one coherent system.
+            </p>
+            <p>
+              Today I also lead FundGuard's AI efforts, from making existing features work with large
+              language models to building agents into the product itself, so that users can operate an
+              investment accounting platform more easily and more effectively. I lead design across teams
+              and mentor engineers so that high-quality code is the norm rather than the exception.
+            </p>
+            <div class="tags">
+              <span class="tag">Architecture</span><span class="tag">LLMs &amp; Agents</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Kubernetes</span>
+              <span class="tag">Elasticsearch</span><span class="tag">Kafka</span><span class="tag">AI / ML</span>
+              <span class="tag">Fintech</span><span class="tag">Multi-cloud</span>
+            </div>
           </div>
         </article>
-
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/salesforce.png" alt="Salesforce"></div>
-            <div class="entry-title">
-              <div class="date">2016 &ndash; 2018</div>
-              <h3>Senior Software Engineer</h3>
-              <div class="meta">Salesforce &middot; Einstein AI</div>
+        <article class="xp-row reveal">
+          <aside class="xp-aside">
+            <div class="xp-sticky">
+              <div class="logo"><img src="img/icons/salesforce.png" alt="Salesforce"></div>
+              <div class="xp-company">Salesforce</div>
+              <div class="xp-dates">2016 &ndash; 2018</div>
             </div>
-          </div>
-          <p>
-            Built AI products over CRM data as part of the
-            <a href="https://www.salesforce.com/products/einstein/" target="_blank" rel="noopener">Salesforce Einstein</a>
-            line, and led the team's architecture and patent work.
-          </p>
-          <ul>
-            <li>
-              <strong>Opportunity Scoring.</strong> Prediction and reasoning over historical deals to
-              estimate the probability that an open opportunity closes by month end.
-            </li>
-            <li>
-              <strong>Account Insights.</strong> Collection, classification and targeted publication of
-              business news so customers hear about the moments that affect their accounts.
-            </li>
-            <li>
-              <strong>Company data platform.</strong> A highly scalable, AI-driven pipeline that crawls,
-              extracts, validates and clusters information from the web into a continuously updated
-              repository of companies worldwide. Built on reactive programming for throughput, and
-              described in seven patent filings, two of which have been granted.
-            </li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Machine learning</span><span class="tag">Reactive systems</span>
-            <span class="tag">Web-scale crawling</span><span class="tag">Patents</span>
+          </aside>
+          <div class="card xp-card">
+            <h3>Senior Software Engineer</h3>
+              <div class="meta">Einstein AI</div>
+            <p>
+              Built AI products over CRM data as part of the
+              <a href="https://www.salesforce.com/products/einstein/" target="_blank" rel="noopener">Salesforce Einstein</a>
+              line, and led the team's architecture and patent work.
+            </p>
+            <ul>
+              <li>
+                <strong>Opportunity Scoring.</strong> Prediction and reasoning over historical deals to
+                estimate the probability that an open opportunity closes by month end.
+              </li>
+              <li>
+                <strong>Account Insights.</strong> Collection, classification and targeted publication of
+                business news so customers hear about the moments that affect their accounts.
+              </li>
+              <li>
+                <strong>Company data platform.</strong> A highly scalable, AI-driven pipeline that crawls,
+                extracts, validates and clusters information from the web into a continuously updated
+                repository of companies worldwide. Built on reactive programming for throughput, and
+                described in seven patent filings, two of which have been granted.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Machine learning</span><span class="tag">Reactive systems</span>
+              <span class="tag">Web-scale crawling</span><span class="tag">Patents</span>
+            </div>
           </div>
         </article>
-
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/vmware.png" alt="VMware"></div>
-            <div class="entry-title">
-              <div class="date">2012 &ndash; 2016</div>
-              <h3>Senior Software Engineer</h3>
-              <div class="meta">VMware</div>
+        <article class="xp-row reveal">
+          <aside class="xp-aside">
+            <div class="xp-sticky">
+              <div class="logo"><img src="img/icons/vmware.png" alt="VMware"></div>
+              <div class="xp-company">VMware</div>
+              <div class="xp-dates">2012 &ndash; 2016</div>
             </div>
-          </div>
-          <ul>
-            <li>
-              <strong>App Volumes.</strong> Application delivery, backup and management over the cloud.
-              Led the conversion of an on-premises product into a micro-service SaaS offering on
-              Google Cloud with Docker and Kubernetes, designed the CI/CD pipeline and ran hands-on
-              proofs of concept for new technologies and integrations.
-            </li>
-            <li>
-              <strong>vRealize Operations Manager 6.0.</strong> An analytics cluster that discovers,
-              monitors and remediates in-guest applications across hybrid clouds. Wrote high- and
-              low-level designs, delivered complex features, and drove the product's build and
-              automation systems.
-            </li>
-            <li>
-              <strong>vSphere AppHA.</strong> A vSphere Web Client plug-in for defining high availability
-              for applications inside virtual machines. Java, Spring and Hibernate on PostgreSQL, with a
-              Flex front end.
-            </li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Micro-services</span><span class="tag">GCP</span><span class="tag">Docker</span>
-            <span class="tag">CI/CD</span><span class="tag">Monitoring</span>
+          </aside>
+          <div class="card xp-card">
+            <h3>Senior Software Engineer</h3>
+            <ul>
+              <li>
+                <strong>App Volumes.</strong> Application delivery, backup and management over the cloud.
+                Led the conversion of an on-premises product into a micro-service SaaS offering on
+                Google Cloud with Docker and Kubernetes, designed the CI/CD pipeline and ran hands-on
+                proofs of concept for new technologies and integrations.
+              </li>
+              <li>
+                <strong>vRealize Operations Manager 6.0.</strong> An analytics cluster that discovers,
+                monitors and remediates in-guest applications across hybrid clouds. Wrote high- and
+                low-level designs, delivered complex features, and drove the product's build and
+                automation systems.
+              </li>
+              <li>
+                <strong>vSphere AppHA.</strong> A vSphere Web Client plug-in for defining high availability
+                for applications inside virtual machines. Java, Spring and Hibernate on PostgreSQL, with a
+                Flex front end.
+              </li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Micro-services</span><span class="tag">GCP</span><span class="tag">Docker</span>
+              <span class="tag">CI/CD</span><span class="tag">Monitoring</span>
+            </div>
           </div>
         </article>
-
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/intel.png" alt="Intel"></div>
-            <div class="entry-title">
-              <div class="date">2011 &ndash; 2012</div>
-              <h3>Software Validation Engineer, Intern</h3>
-              <div class="meta">Intel</div>
+        <article class="xp-row reveal">
+          <aside class="xp-aside">
+            <div class="xp-sticky">
+              <div class="logo"><img src="img/icons/intel.png" alt="Intel"></div>
+              <div class="xp-company">Intel</div>
+              <div class="xp-dates">2011 &ndash; 2012</div>
             </div>
+          </aside>
+          <div class="card xp-card">
+            <h3>Software Validation Engineer, Intern</h3>
+            <p>Designed and ran performance tests for Intel's Atom-based system-on-chip solutions.</p>
           </div>
-          <p>Designed and ran performance tests for Intel's Atom-based system-on-chip solutions.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="ai">
+  <section class="section ai-band" id="ai">
     <div class="container">
       <div class="section-head reveal">
+        <span class="ai-eyebrow">A thread through my career</span>
         <h2>AI</h2>
         <p>AI has been part of my work since my first year of computer science. It started with search and constraint solving as an undergraduate, continued with classic machine learning in production at Salesforce and a master's degree centred on deep reinforcement learning, and today it means bringing large language models and agents into a production platform.</p>
       </div>
 
-      <div class="timeline">
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/hebrew_uni.png" alt="The Hebrew University of Jerusalem"></div>
-            <div class="entry-title">
-              <div class="date">2011 &ndash; 2012</div>
-              <h3>Classical AI at the Hebrew University</h3>
-              <div class="meta">B.Sc. &middot; Introduction to Artificial Intelligence and a guided project with Prof. Jeff Rosenschein</div>
-            </div>
-          </div>
-          <p>
-            Back then the field was called classical AI and machine learning: search, planning, constraint
-            satisfaction and the beginnings of statistical learning. Two projects from that year, both
-            with Ilia Pogrebezky, have stayed with me.
-          </p>
-          <ul>
-            <li>
-              <strong>Wedding planner.</strong> Guest seating as a constraint satisfaction problem with a cost
-              function: tables of different sizes, must-sit-with and must-not-sit-with rules, hard and soft
-              constraints. We compared backtracking against local search methods such as hill climbing with
-              random restarts, simulated annealing and tabu search, and shipped a working system.
-            </li>
-            <li>
+      <div class="ai-track reveal" role="tablist" aria-label="Stages of my work in AI" style="--p:100%">
+        <div class="ai-rail" aria-hidden="true"><span class="ai-fill"></span></div>
+        <button class="ai-step" role="tab" id="ai-tab-1" aria-controls="ai-panel-1" aria-selected="false" tabindex="-1">
+          <span class="ai-dot"></span><span class="ai-year">2011&ndash;2012</span><span class="ai-label">Classical AI</span>
+        </button>
+        <button class="ai-step" role="tab" id="ai-tab-2" aria-controls="ai-panel-2" aria-selected="false" tabindex="-1">
+          <span class="ai-dot"></span><span class="ai-year">2016&ndash;2018</span><span class="ai-label">Machine learning</span>
+        </button>
+        <button class="ai-step" role="tab" id="ai-tab-3" aria-controls="ai-panel-3" aria-selected="false" tabindex="-1">
+          <span class="ai-dot"></span><span class="ai-year">2018&ndash;2019</span><span class="ai-label">Deep RL &amp; DQN</span>
+        </button>
+        <button class="ai-step" role="tab" id="ai-tab-4" aria-controls="ai-panel-4" aria-selected="true" tabindex="0">
+          <span class="ai-dot"></span><span class="ai-year">Now</span><span class="ai-label">LLMs &amp; agents</span>
+        </button>
+      </div>
+
+      <div class="ai-panels reveal">
+        <article class="ai-panel" role="tabpanel" id="ai-panel-1" aria-labelledby="ai-tab-1">
+          <div class="ai-main">
+            <div class="ai-kicker"><img src="img/icons/hebrew_uni.png" alt="">The Hebrew University &middot; B.Sc.</div>
+            <h3>Search, planning and constraint solving</h3>
+            <p>
+              Back then the field was called classical AI and machine learning. Two projects from that
+              year, both with Ilia Pogrebezky, have stayed with me.
+            </p>
+            <p>
+              <strong>Wedding planner.</strong> A guided project with Prof. Jeff Rosenschein that treats guest
+              seating as a constraint satisfaction problem with a cost function: tables of different sizes,
+              must-sit-with and must-not-sit-with rules, hard and soft constraints. We compared backtracking
+              against local search and shipped a working system.
+            </p>
+            <p>
               <strong>Peg solitaire solver.</strong> A game AI for the diamond peg board built on uninformed and
-              informed search: BFS, DFS, iterative deepening, A*, IDA* and weighted A* with a set of
-              hand-designed heuristics, benchmarked against each other.
-            </li>
-          </ul>
-          <div class="links">
-            <a href="https://github.com/hananaharonof/pegs" target="_blank" rel="noopener">Peg solitaire on GitHub</a>
+              informed search with a set of hand-designed heuristics, benchmarked against each other.
+            </p>
           </div>
+          <aside class="ai-side">
+            <div class="ai-side-title">Techniques</div>
+            <ul class="ai-chips"><li>Constraint satisfaction</li><li>Backtracking</li><li>Hill climbing</li><li>Simulated annealing</li><li>Tabu search</li><li>A* and IDA*</li><li>Heuristic design</li></ul>
+            <div class="ai-links"><a href="https://github.com/hananaharonof/pegs" target="_blank" rel="noopener">Peg solitaire on GitHub</a></div>
+          </aside>
         </article>
 
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/salesforce.png" alt="Salesforce"></div>
-            <div class="entry-title">
-              <div class="date">2016 &ndash; 2018</div>
-              <h3>Classic machine learning in production</h3>
-              <div class="meta">Salesforce Einstein</div>
-            </div>
+        <article class="ai-panel" role="tabpanel" id="ai-panel-2" aria-labelledby="ai-tab-2">
+          <div class="ai-main">
+            <div class="ai-kicker"><img src="img/icons/salesforce.png" alt="">Salesforce Einstein</div>
+            <h3>Classic machine learning in production</h3>
+            <p>
+              In parallel with my master's I built AI features for Salesforce customers: opportunity
+              scoring that learns from past deals to predict which open ones will close, classification
+              of business news to the accounts it affects, and a web-scale pipeline that crawls, extracts,
+              validates and clusters company data.
+            </p>
+            <p>
+              Classic supervised learning and clustering, at production scale, with the architecture
+              written up in seven patent filings.
+            </p>
           </div>
-          <p>
-            In parallel with my master's I built AI features for Salesforce customers: opportunity
-            scoring that learns from past deals to predict which open ones will close, classification
-            of business news to the accounts it affects, and a web-scale pipeline that crawls, extracts,
-            validates and clusters company data. Classic supervised learning and clustering, at
-            production scale, with the architecture written up in seven patent filings.
-          </p>
-          <div class="links">
-            <a href="#patents">See the patents</a>
-          </div>
+          <aside class="ai-side">
+            <div class="ai-side-title">Techniques</div>
+            <ul class="ai-chips"><li>Supervised learning</li><li>Clustering</li><li>Text classification</li><li>Entity resolution</li><li>Web-scale crawling</li><li>Reactive pipelines</li></ul>
+            <div class="ai-links"><a href="#patents">See the patents</a></div>
+          </aside>
         </article>
 
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/open_uni.png" alt="The Open University of Israel"></div>
-            <div class="entry-title">
-              <div class="date">2018 &ndash; 2019</div>
-              <h3>Deep reinforcement learning and DQN</h3>
-              <div class="meta">M.Sc. final paper and project &middot; The Open University of Israel &middot; supervised by Dr. Mireille Avigal</div>
-            </div>
+        <article class="ai-panel" role="tabpanel" id="ai-panel-3" aria-labelledby="ai-tab-3">
+          <div class="ai-main">
+            <div class="ai-kicker"><img src="img/icons/open_uni.png" alt="">The Open University of Israel &middot; M.Sc.</div>
+            <h3>Deep reinforcement learning and DQN</h3>
+            <p>
+              My master's degree focused on reinforcement learning and, above all, on Deep Q-Networks,
+              supervised by Dr. Mireille Avigal. The final paper,
+              <em>Deep Reinforcement Learning: Theory, Applications and a Look to the Future</em>, builds the
+              theory up from Markov decision processes, dynamic programming, Monte Carlo and
+              temporal-difference methods to DQN and its successors, then surveys where the field was heading.
+            </p>
+            <p>
+              The accompanying project is a DQN agent that learns to play Pac-Man from raw pixels, written
+              from scratch in Python.
+            </p>
           </div>
-          <div class="entry-media">
-            <div>
-              <p>
-                My master's degree focused on reinforcement learning and, above all, on Deep Q-Networks.
-                The final paper, <em>Deep Reinforcement Learning: Theory, Applications and a Look to the Future</em>,
-                builds the theory up from Markov decision processes, dynamic programming, Monte Carlo and
-                temporal-difference methods to DQN and its successors, then surveys where the field was
-                heading. The accompanying project is a DQN agent that learns to play Pac-Man from raw
-                pixels: convolutional network, experience replay, frame stacking and a target network,
-                written from scratch in Python.
-              </p>
-              <div class="links">
-                <a href="docs/deep-reinforcement-learning-msc-paper.pdf" target="_blank" rel="noopener">Read the paper (PDF, Hebrew)</a>
-                <a href="https://github.com/hananaharonof/pacman-dqn" target="_blank" rel="noopener">Pac-Man DQN on GitHub</a>
-              </div>
+          <aside class="ai-side">
+            <a class="ai-thumb" href="https://github.com/hananaharonof/pacman-dqn" target="_blank" rel="noopener"><img src="img/open_source/dqn-pacman.png" alt="Pac-Man maze rendered by the DQN agent"></a>
+            <ul class="ai-chips"><li>Q-learning</li><li>Deep Q-Networks</li><li>CNNs</li><li>Experience replay</li><li>Target networks</li></ul>
+            <div class="ai-links">
+              <a href="docs/deep-reinforcement-learning-msc-paper.pdf" target="_blank" rel="noopener">Read the paper (PDF, Hebrew)</a>
+              <a href="https://github.com/hananaharonof/pacman-dqn" target="_blank" rel="noopener">Pac-Man DQN on GitHub</a>
             </div>
-            <a class="thumb" href="https://github.com/hananaharonof/pacman-dqn" target="_blank" rel="noopener"><img src="img/open_source/dqn-pacman.png" alt="Pac-Man maze rendered by the DQN agent"></a>
-          </div>
+          </aside>
         </article>
 
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/fundguard.png" alt="FundGuard"></div>
-            <div class="entry-title">
-              <div class="date">Now</div>
-              <h3>Large language models and agents at FundGuard</h3>
-              <div class="meta">Software Architect &amp; AI Lead</div>
+        <article class="ai-panel" role="tabpanel" id="ai-panel-4" aria-labelledby="ai-tab-4">
+          <div class="ai-main">
+            <div class="ai-kicker"><img src="img/icons/fundguard.png" alt="">FundGuard &middot; Software Architect &amp; AI Lead</div>
+            <h3>Large language models and agents</h3>
+            <p>
+              I lead FundGuard's AI work. The first phase was making existing features LLM-ready: data
+              mapping, reconciliation and exception handling that can propose, explain and, with enough
+              confidence, act. The current phase is building agents into the product itself, so that fund
+              accountants and operations teams can run an investment accounting platform in plain language,
+              and so that customers' own agents can work against governed, real-time accounting data.
+            </p>
+            <p>
+              The architectural principles behind this are public: a single real-time system of record,
+              complete auditability for every decision an agent makes, and open interoperability.
+            </p>
+          </div>
+          <aside class="ai-side">
+            <div class="ai-side-title">Techniques</div>
+            <ul class="ai-chips"><li>Large language models</li><li>AI agents</li><li>Model Context Protocol</li><li>Agent-to-agent</li><li>Governed data access</li></ul>
+            <div class="ai-links">
+              <a href="https://www.fundguard.com/announcement-ai-investment-accounting-white-paper/" target="_blank" rel="noopener">White paper: Intelligence at the Core</a>
+              <a href="https://www.fundguard.com/why-real-time-investment-accounting-data-is-the-prerequisite-for-agentic-ai/" target="_blank" rel="noopener">Why real-time data is the prerequisite for agentic AI</a>
             </div>
-          </div>
+          </aside>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reading">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Reading List</h2>
+        <p>Technical books that shaped how I build software, and the one on my desk right now.</p>
+      </div>
+
+      <article class="now-reading card reveal">
+        <a class="book-cover" href="https://www.manning.com/books/agent-design-patterns" target="_blank" rel="noopener" aria-label="Agent Design Patterns by Peter Belcak">
+          <img src="img/books/agent-design-patterns.jpg" alt="" loading="lazy" decoding="async">
+        </a>
+        <div class="now-body">
+          <span class="badge badge-app"><span class="pulse" aria-hidden="true"></span>Currently reading</span>
+          <h3><a href="https://www.manning.com/books/agent-design-patterns" target="_blank" rel="noopener">Agent Design Patterns</a></h3>
+          <div class="book-author">Peter Belcak &middot; Manning, early access</div>
           <p>
-            I lead FundGuard's AI work. The first phase was making existing features LLM-ready: data
-            mapping, reconciliation and exception handling that can propose, explain and, with enough
-            confidence, act. The current phase is building agents into the product itself, so that fund
-            accountants and operations teams can run an investment accounting platform in plain language,
-            and so that customers' own agents can work against governed, real-time accounting data.
+            Twenty-plus composable patterns for building AI agents that are reliable, controllable and
+            easy to reason about, each written up as a named problem, solution and trade-offs. I am reading
+            it chapter by chapter as it is released, because a shared vocabulary of patterns is exactly what
+            turning agent prototypes into production systems needs.
           </p>
-          <p>
-            The architectural principles behind this are public: a single real-time system of record,
-            complete auditability for every decision an agent makes, and open interoperability through
-            the Model Context Protocol and agent-to-agent standards.
-          </p>
-          <div class="links">
-            <a href="https://www.fundguard.com/announcement-ai-investment-accounting-white-paper/" target="_blank" rel="noopener">White paper: Intelligence at the Core</a>
-            <a href="https://www.fundguard.com/why-real-time-investment-accounting-data-is-the-prerequisite-for-agentic-ai/" target="_blank" rel="noopener">Why real-time data is the prerequisite for agentic AI</a>
-          </div>
+        </div>
+      </article>
+
+      <div class="shelf">
+        <article class="book reveal">
+          <a class="book-cover" href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener" aria-label="Computer Networking: A Top-Down Approach by James Kurose &amp; Keith Ross">
+            <img src="img/books/computer-networking.jpg" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="book-theme">Foundations</div>
+          <h3><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" rel="noopener">Computer Networking: A Top-Down Approach</a></h3>
+          <div class="book-author">James Kurose &amp; Keith Ross &middot; Pearson</div>
+          <p>Builds networking from the applications we use down to the wire. It is still the mental model I reach for when something breaks between services.</p>
+        </article>
+        <article class="book reveal">
+          <a class="book-cover" href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener" aria-label="Clean Code by Robert C. Martin">
+            <img src="img/books/clean-code.jpg" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="book-theme">Craft</div>
+          <h3><a href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884" target="_blank" rel="noopener">Clean Code</a></h3>
+          <div class="book-author">Robert C. Martin &middot; Prentice Hall</div>
+          <p>Not every rule has aged well, but its central idea, that code is read far more often than it is written, shapes how I review code and mentor engineers.</p>
+        </article>
+        <article class="book reveal">
+          <a class="book-cover" href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener" aria-label="Spring Boot in Action by Craig Walls">
+            <img src="img/books/spring-boot-in-action.jpg" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="book-theme">Java &amp; Spring</div>
+          <h3><a href="https://www.manning.com/books/spring-boot-in-action" target="_blank" rel="noopener">Spring Boot in Action</a></h3>
+          <div class="book-author">Craig Walls &middot; Manning</div>
+          <p>A practical guide to the conventions behind Spring Boot, the framework under most of the Java services I have built.</p>
+        </article>
+        <article class="book reveal">
+          <a class="book-cover" href="https://dataintensive.net/" target="_blank" rel="noopener" aria-label="Designing Data-Intensive Applications by Martin Kleppmann">
+            <img src="img/books/ddia.jpg" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="book-theme">Systems &amp; data</div>
+          <h3><a href="https://dataintensive.net/" target="_blank" rel="noopener">Designing Data-Intensive Applications</a></h3>
+          <div class="book-author">Martin Kleppmann &middot; O'Reilly</div>
+          <p>The clearest map of the trade-offs in storage, replication and stream processing. If I could hand one book to every backend engineer, it would be this one.</p>
         </article>
       </div>
     </div>
@@ -338,63 +429,45 @@
         <p>Three granted US patents and five published applications, all co-invented with my teams at Salesforce and VMware. Statuses are as recorded at the USPTO.</p>
       </div>
 
-      <div class="patent-grid">
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-granted">Granted</span><span class="num">US 11,126,673</span></div>
+      <div class="pat-granted">
+        <article class="pat-feature card reveal">
+          <span class="badge badge-granted">Granted 2021</span>
+          <span class="num">US 11,126,673</span>
           <h3>Automatically enriching collected seeds with information extracted from websites</h3>
           <p>Crawlers verify that a site belongs to a company, then attribute-specific extractors, search engines and third-party APIs enrich each seed.</p>
-          <p class="dates">Filed Jan 2019 &middot; Granted Sep 21, 2021 &middot; Salesforce</p>
-          <a href="https://patents.justia.com/patent/11126673" target="_blank" rel="noopener">Read the patent</a>
+          <div class="pat-foot"><span>Salesforce &middot; filed Jan 2019</span><a href="https://patents.justia.com/patent/11126673" target="_blank" rel="noopener">Read</a></div>
         </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-granted">Granted</span><span class="num">US 10,866,996</span></div>
+        <article class="pat-feature card reveal">
+          <span class="badge badge-granted">Granted 2020 &middot; 2022</span>
+          <span class="num">US 10,866,996 &middot; US 11,397,780</span>
           <h3>Clustering enriched company seeds and selecting the best value per attribute</h3>
-          <p>Seeds from independent sources are clustered per company and the highest-scoring value of every attribute becomes the company profile.</p>
-          <p class="dates">Filed Jan 2019 &middot; Granted Dec 15, 2020 &middot; Salesforce<br>Continuation US 11,397,780 granted Jul 26, 2022</p>
-          <a href="https://patents.justia.com/patent/10866996" target="_blank" rel="noopener">Read the patent</a>
+          <p>Seeds from independent sources are clustered per company and the highest-scoring value of every attribute becomes the company profile. The 2022 patent is its continuation.</p>
+          <div class="pat-foot"><span>Salesforce &middot; filed Jan 2019</span><a href="https://patents.justia.com/patent/10866996" target="_blank" rel="noopener">Read</a></div>
         </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-granted">Granted 2017</span><span class="num">US 9,747,119</span></div>
+        <article class="pat-feature card reveal">
+          <span class="badge badge-granted">Granted 2017</span>
+          <span class="num">US 9,747,119</span>
           <h3>Methods and apparatus to monitor virtual computing environments</h3>
           <p>Checks a host's resource status against a threshold and runs monitoring operations inside a container hosted by its engine.</p>
-          <p class="dates">Filed Jun 2015 &middot; Granted Aug 29, 2017 &middot; VMware</p>
-          <a href="https://patents.justia.com/patent/9747119" target="_blank" rel="noopener">Read the patent</a>
+          <div class="pat-foot"><span>VMware &middot; filed Jun 2015</span><a href="https://patents.justia.com/patent/9747119" target="_blank" rel="noopener">Read</a></div>
         </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-app">Published application</span><span class="num">US 2020/0242533</span></div>
-          <h3>Verifying repository quality and publishing when profiles pass a quality test</h3>
-          <p>A quality gate computes a repository score from sampled profiles and only then publishes the version to the data store.</p>
-          <p class="dates">Filed Jan 2019 &middot; Published Jul 30, 2020 &middot; Salesforce &middot; not pursued to grant</p>
-          <a href="https://patents.justia.com/patent/20200242533" target="_blank" rel="noopener">Read the application</a>
-        </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-app">Published application</span><span class="num">US 2020/0242635</span></div>
-          <h3>Rating company profiles and auto-filling CRM records from the top match</h3>
-          <p>Profiles are scored from multiple input metrics; a CRM picks the highest ranked and pre-fills new records from it.</p>
-          <p class="dates">Filed Jan 2019 &middot; Published Jul 30, 2020 &middot; Salesforce &middot; not pursued to grant</p>
-          <a href="https://patents.justia.com/patent/20200242635" target="_blank" rel="noopener">Read the application</a>
-        </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-app">Published application</span><span class="num">US 2020/0242632</span></div>
-          <h3>Discovering and identifying a company name across different websites</h3>
-          <p>Candidate names and supporting indicators are extracted from home-page HTML, clustered, scored heuristically and resolved to one name.</p>
-          <p class="dates">Filed Jan 2019 &middot; Published Jul 30, 2020 &middot; Salesforce &middot; not pursued to grant</p>
-          <a href="https://patents.justia.com/patent/20200242632" target="_blank" rel="noopener">Read the application</a>
-        </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-app">Published application</span><span class="num">US 2020/0242633</span></div>
-          <h3>Enriching a company profile with its logo from candidate images</h3>
-          <p>Candidate images from several sources are compared and the closest match is attached to the profile.</p>
-          <p class="dates">Filed Jan 2019 &middot; Published Jul 30, 2020 &middot; Salesforce &middot; not pursued to grant</p>
-          <a href="https://patents.justia.com/patent/20200242633" target="_blank" rel="noopener">Read the application</a>
-        </article>
-        <article class="patent card reveal">
-          <div class="patent-top"><span class="badge badge-app">Published application</span><span class="num">US 2020/0242634</span></div>
-          <h3>Identifying company executives across websites and generating executive profiles</h3>
-          <p>Search APIs surface candidate pages, executive details are extracted and consolidated into profiles that enrich the company record.</p>
-          <p class="dates">Filed Jan 2019 &middot; Published Jul 30, 2020 &middot; Salesforce &middot; not pursued to grant</p>
-          <a href="https://patents.justia.com/patent/20200242634" target="_blank" rel="noopener">Read the application</a>
-        </article>
+      </div>
+
+      <div class="pat-ledger card reveal">
+        <div class="pat-ledger-head">
+          <h3>Published applications</h3>
+          <span>Salesforce &middot; filed Jan 2019 &middot; published Jul 2020 &middot; not pursued to grant</span>
+        </div>
+        <table>
+          <thead><tr><th scope="col">Publication</th><th scope="col">Title</th><th scope="col"><span class="sr-only">Link</span></th></tr></thead>
+          <tbody>
+            <tr><td class="num">US 2020/0242533</td><td>Verifying repository quality and publishing when profiles pass a quality test</td><td><a href="https://patents.justia.com/patent/20200242533" target="_blank" rel="noopener" aria-label="Read US 2020/0242533">Read</a></td></tr>
+            <tr><td class="num">US 2020/0242635</td><td>Rating company profiles and auto-filling CRM records from the top match</td><td><a href="https://patents.justia.com/patent/20200242635" target="_blank" rel="noopener" aria-label="Read US 2020/0242635">Read</a></td></tr>
+            <tr><td class="num">US 2020/0242632</td><td>Discovering and identifying a company name across different websites</td><td><a href="https://patents.justia.com/patent/20200242632" target="_blank" rel="noopener" aria-label="Read US 2020/0242632">Read</a></td></tr>
+            <tr><td class="num">US 2020/0242633</td><td>Enriching a company profile with its logo from candidate images</td><td><a href="https://patents.justia.com/patent/20200242633" target="_blank" rel="noopener" aria-label="Read US 2020/0242633">Read</a></td></tr>
+            <tr><td class="num">US 2020/0242634</td><td>Identifying company executives across websites and generating executive profiles</td><td><a href="https://patents.justia.com/patent/20200242634" target="_blank" rel="noopener" aria-label="Read US 2020/0242634">Read</a></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -404,8 +477,12 @@
       <div class="section-head reveal">
         <h2>Events</h2>
       </div>
-      <div class="split single">
-        <article class="card reveal">
+      <article class="event card reveal">
+        <div class="event-media">
+          <!-- To show a photo, replace this badge with: <img src="img/events/sensofit.jpg" alt="..."> -->
+          <div class="event-badge"><span class="event-rank">1<sup>st</sup></span><span class="event-place">place</span><span class="event-year">2014</span></div>
+        </div>
+        <div class="event-body">
           <h3>IoT Hackathon 2014, first place with SensOfit</h3>
           <p class="meta">Texas Instruments, IBM &amp; Pitango VC &middot; final at the EY Journey conference, November 2014</p>
           <p>
@@ -420,8 +497,8 @@
             <a href="https://www.globes.co.il/news/article.aspx?did=1000983032" target="_blank" rel="noopener">Globes coverage</a>
             <a href="https://www.youtube.com/watch?v=vgkFnNRSthk" target="_blank" rel="noopener">Watch the pitch</a>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -430,37 +507,29 @@
       <div class="section-head reveal">
         <h2>Education</h2>
       </div>
-      <div class="timeline">
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/open_uni.png" alt="The Open University of Israel"></div>
-            <div class="entry-title">
-              <div class="date">2013 &ndash; 2019</div>
-              <h3>M.Sc. Computer Science</h3>
-              <div class="meta">The Open University of Israel &middot; GPA 96 &middot; Summa cum laude</div>
-            </div>
-          </div>
+      <div class="edu">
+        <article class="edu-tile card reveal">
+          <div class="logo"><img src="img/icons/open_uni.png" alt=""></div>
+          <div class="edu-years">2013 &ndash; 2019</div>
+          <h3>M.Sc. Computer Science</h3>
+          <div class="edu-school">The Open University of Israel</div>
+          <div class="edu-facts"><span class="badge badge-granted">Summa cum laude</span><span>GPA 96</span></div>
           <p>Focus on machine learning and deep reinforcement learning. Coursework in computer security, cryptography and image processing.</p>
         </article>
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo"><img src="img/icons/hebrew_uni.png" alt="The Hebrew University of Jerusalem"></div>
-            <div class="entry-title">
-              <div class="date">2009 &ndash; 2012</div>
-              <h3>B.Sc. Computer Science</h3>
-              <div class="meta">The Hebrew University of Jerusalem &middot; GPA 90</div>
-            </div>
-          </div>
+        <article class="edu-tile card reveal">
+          <div class="logo"><img src="img/icons/hebrew_uni.png" alt=""></div>
+          <div class="edu-years">2009 &ndash; 2012</div>
+          <h3>B.Sc. Computer Science</h3>
+          <div class="edu-school">The Hebrew University of Jerusalem</div>
+          <div class="edu-facts"><span>GPA 90</span></div>
+          <p>Introduction to Artificial Intelligence and a guided project with Prof. Jeff Rosenschein, both in search and constraint solving.</p>
         </article>
-        <article class="entry card reveal">
-          <div class="entry-head">
-            <div class="logo" aria-hidden="true"><span style="font-weight:700;color:var(--accent)">HS</span></div>
-            <div class="entry-title">
-              <div class="date">2001 &ndash; 2004</div>
-              <h3>Computer Science &amp; Electronics Engineering</h3>
-              <div class="meta">Hadassah-Seligsberg High School &middot; GPA 114 &middot; Summa cum laude</div>
-            </div>
-          </div>
+        <article class="edu-tile card reveal">
+          <div class="logo" aria-hidden="true"><span class="logo-text">HS</span></div>
+          <div class="edu-years">2001 &ndash; 2004</div>
+          <h3>Computer Science &amp; Electronics</h3>
+          <div class="edu-school">Hadassah-Seligsberg High School</div>
+          <div class="edu-facts"><span class="badge badge-granted">Summa cum laude</span><span>GPA 114</span></div>
         </article>
       </div>
     </div>
@@ -470,49 +539,59 @@
     <div class="container">
       <div class="section-head reveal">
         <h2>References</h2>
-        <p>What the people I have worked for and with say.</p>
+        <p>What the people I have worked for and with say, from their recommendations on LinkedIn.</p>
       </div>
-      <div class="ref-grid">
-        <article class="ref card reveal">
-          <p>Hanan is THE BEST! I managed him for four years, from his first day at VMware as a junior developer until he became a senior engineer. Super smart, fast as a bullet, and he understands technology. He can program in any language, write complicated system scripts, or design complicated integrations with third parties. He was the focal point and technology leader in every team he was part of, with tremendous impact on his teams and on VMware in general. I would hire him back in a second.</p>
-          <div class="person">
-            <a href="https://www.linkedin.com/in/galzellermayer" target="_blank" rel="noopener"><img src="img/people/gzellermayer.jpeg" alt=""></a>
-            <div><strong>Gal Zellermayer</strong><span>Engineering Manager, Facebook &middot; managed Hanan at VMware</span></div>
-          </div>
-        </article>
-        <article class="ref card reveal">
-          <p>I recruited Hanan fresh out of university, and right from the start it was obvious he is a stellar developer: smart, dedicated, with an amazing ability to master new technologies quickly. When he rejoined my team years later as a senior developer he led the conversion of an on-prem product to a SaaS offering, designed and developed the CI/CD process and was the natural choice for deeply technical tasks. I am continuously impressed by his ability to present a topic clearly and lead a technical discussion around the decisions we need to take.</p>
-          <div class="person">
-            <a href="https://www.linkedin.com/in/avshiavital" target="_blank" rel="noopener"><img src="img/people/aavital.jpeg" alt=""></a>
-            <div><strong>Avshi Avital</strong><span>Co-Founder and CEO, Vayo &middot; managed Hanan at VMware</span></div>
-          </div>
-        </article>
-        <article class="ref card reveal">
-          <p>If you are looking for the best people to build your dream team, Hanan should be your first hire. On my team he designed and built our cloud platform from scratch, converting an on-prem application to a micro-services architecture on Google and AWS, implementing the CI/CD process and making sure every scale and performance target was met. He led these efforts, became a master of cloud technologies, educated the team and delivered everything on time at very high quality.</p>
-          <div class="person">
-            <a href="https://www.linkedin.com/in/danzada" target="_blank" rel="noopener"><img src="img/people/dzada.jpeg" alt=""></a>
-            <div><strong>Dan Zada</strong><span>R&amp;D Manager, Check Point &middot; managed Hanan at VMware</span></div>
-          </div>
-        </article>
-        <article class="ref card reveal">
-          <p>Hanan is an asset to have on any team. I had the pleasure of working with him for almost three years at Salesforce. He has an amazing approach to architecting and developing complex, large-scale software systems, and his innovative nature brought new technologies and techniques to projects running at scale in production. Responsible, a true technology leader, with great execution capabilities.</p>
-          <div class="person">
-            <a href="https://www.linkedin.com/in/eladdonsky" target="_blank" rel="noopener"><img src="img/people/edonsky.jpeg" alt=""></a>
-            <div><strong>Elad Donsky</strong><span>VP Engineering &amp; Head of Israel R&amp;D &middot; worked with Hanan at Salesforce</span></div>
-          </div>
-        </article>
-        <article class="ref card reveal">
-          <p>We studied computer science together at the Hebrew University and years later worked together again at Salesforce, first as peers and then with me managing Hanan. He led the design and architecture of the system we were building and introduced new technologies to make it more stable and scalable. When I was on paternity leave he stepped in to lead the team, coordinated with peer teams and management to deliver on time, and took full responsibility for patenting our work, seven patents in all. Smart, experienced, hard working. I would hire him back in a second.</p>
-          <div class="person">
-            <a href="https://www.linkedin.com/in/eli-pogrebezky-6127a864" target="_blank" rel="noopener"><img src="img/people/epogrebezky.jpeg" alt=""></a>
-            <div><strong>Eli Pogrebetzky</strong><span>Director of Data Science, Salesforce &middot; managed Hanan at Salesforce</span></div>
-          </div>
-        </article>
+      <div class="spot card reveal">
+        <div class="spot-quote-mark" aria-hidden="true">&ldquo;</div>
+        <div class="spot-slides">
+          <figure class="spot-slide" id="ref-1" role="tabpanel" aria-labelledby="ref-tab-1">
+            <blockquote>Hanan is THE BEST! I managed him for four years, from his first day at VMware as a junior developer until he became a senior engineer. Super smart, fast as a bullet, and he understands technology. He can program in any language, write complicated system scripts, or design complicated integrations with third parties. He was the focal point and technology leader in every team he was part of, with tremendous impact on his teams and on VMware in general. I would hire him back in a second.</blockquote>
+            <figcaption><strong><a href="https://www.linkedin.com/in/galzellermayer" target="_blank" rel="noopener">Gal Zellermayer</a></strong><span>Meta &middot; managed Hanan at VMware</span></figcaption>
+          </figure>
+          <figure class="spot-slide" id="ref-2" role="tabpanel" aria-labelledby="ref-tab-2">
+            <blockquote>I recruited Hanan fresh out of university, and right from the start it was obvious he is a stellar developer: smart, dedicated, with an amazing ability to master new technologies quickly. When he rejoined my team years later as a senior developer he led the conversion of an on-prem product to a SaaS offering, designed and developed the CI/CD process and was the natural choice for deeply technical tasks. I am continuously impressed by his ability to present a topic clearly and lead a technical discussion around the decisions we need to take.</blockquote>
+            <figcaption><strong><a href="https://www.linkedin.com/in/avshiavital" target="_blank" rel="noopener">Avshi Avital</a></strong><span>Gong &middot; managed Hanan at VMware</span></figcaption>
+          </figure>
+          <figure class="spot-slide" id="ref-3" role="tabpanel" aria-labelledby="ref-tab-3">
+            <blockquote>If you are looking for the best people to build your dream team, Hanan should be your first hire. On my team he designed and built our cloud platform from scratch, converting an on-prem application to a micro-services architecture on Google and AWS, implementing the CI/CD process and making sure every scale and performance target was met. He led these efforts, became a master of cloud technologies, educated the team and delivered everything on time at very high quality.</blockquote>
+            <figcaption><strong><a href="https://www.linkedin.com/in/danzada" target="_blank" rel="noopener">Dan Zada</a></strong><span>Meta &middot; managed Hanan at VMware</span></figcaption>
+          </figure>
+          <figure class="spot-slide" id="ref-4" role="tabpanel" aria-labelledby="ref-tab-4">
+            <blockquote>Hanan is an asset to have on any team. I had the pleasure of working with him for almost three years at Salesforce. He has an amazing approach to architecting and developing complex, large-scale software systems, and his innovative nature brought new technologies and techniques to projects running at scale in production. Responsible, a true technology leader, with great execution capabilities.</blockquote>
+            <figcaption><strong><a href="https://www.linkedin.com/in/hananaharonof/details/recommendations/" target="_blank" rel="noopener">Elad Donsky</a></strong><span>Head of Products, Cloudinary &middot; worked with Hanan at Salesforce</span></figcaption>
+          </figure>
+          <figure class="spot-slide" id="ref-5" role="tabpanel" aria-labelledby="ref-tab-5">
+            <blockquote>We studied computer science together at the Hebrew University and years later worked together again at Salesforce, first as peers and then with me managing Hanan. He led the design and architecture of the system we were building and introduced new technologies to make it more stable and scalable. When I was on paternity leave he stepped in to lead the team, coordinated with peer teams and management to deliver on time, and took full responsibility for patenting our work, seven patents in all. Smart, experienced, hard working. I would hire him back in a second.</blockquote>
+            <figcaption><strong><a href="https://www.linkedin.com/in/hananaharonof/details/recommendations/" target="_blank" rel="noopener">Eli Pogrebezky</a></strong><span>Engineering Manager, Google &middot; managed Hanan at Salesforce</span></figcaption>
+          </figure>
+        </div>
+        <div class="spot-nav" role="tablist" aria-label="Choose a reference">
+          <button class="spot-thumb" role="tab" id="ref-tab-1" aria-controls="ref-1" aria-selected="false" tabindex="-1" title="Gal Zellermayer" data-href="https://www.linkedin.com/in/galzellermayer" data-name="Gal Zellermayer"><img src="img/people/gzellermayer.jpeg" alt="Gal Zellermayer"></button>
+          <button class="spot-thumb" role="tab" id="ref-tab-2" aria-controls="ref-2" aria-selected="false" tabindex="-1" title="Avshi Avital" data-href="https://www.linkedin.com/in/avshiavital" data-name="Avshi Avital"><img src="img/people/aavital.jpeg" alt="Avshi Avital"></button>
+          <button class="spot-thumb" role="tab" id="ref-tab-3" aria-controls="ref-3" aria-selected="false" tabindex="-1" title="Dan Zada" data-href="https://www.linkedin.com/in/danzada" data-name="Dan Zada"><img src="img/people/dzada.jpeg" alt="Dan Zada"></button>
+          <button class="spot-thumb" role="tab" id="ref-tab-4" aria-controls="ref-4" aria-selected="false" tabindex="-1" title="Elad Donsky" data-href="https://www.linkedin.com/in/hananaharonof/details/recommendations/" data-name="Elad Donsky"><img src="img/people/edonsky.jpeg" alt="Elad Donsky"></button>
+          <button class="spot-thumb" role="tab" id="ref-tab-5" aria-controls="ref-5" aria-selected="false" tabindex="-1" title="Eli Pogrebezky" data-href="https://www.linkedin.com/in/hananaharonof/details/recommendations/" data-name="Eli Pogrebezky"><img src="img/people/epogrebezky.jpeg" alt="Eli Pogrebezky"></button>
+        </div>
+        <a class="spot-more" href="https://www.linkedin.com/in/hananaharonof/details/recommendations/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          Read all recommendations on LinkedIn
+        </a>
+        <div class="spot-progress" aria-hidden="true"><span></span></div>
       </div>
     </div>
   </section>
 
 </main>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 44 44" aria-hidden="true">
+    <circle class="to-top-track" cx="22" cy="22" r="20"></circle>
+    <circle class="to-top-ring" cx="22" cy="22" r="20"></circle>
+    <path d="M22 29V15m0 0-6 6m6-6 6 6" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+</a>
 
 <footer class="site-footer">
   <div class="container">
@@ -527,6 +606,89 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canVT = typeof document.startViewTransition === 'function' && !reduceMotion;
+  if (canVT) document.documentElement.classList.add('vt');
+  function withViewTransition(update, dir) {
+    if (!canVT || document.hidden) { update(); return; }
+    var root = document.documentElement;
+    root.dataset.vtDir = dir || 'fwd';
+    root.classList.add('vt-run');
+    var t = document.startViewTransition(update);
+    function done() { root.classList.remove('vt-run'); }
+    t.ready.catch(function () {});
+    t.finished.then(done, done);
+  }
+
+  var toastEl = document.querySelector('.toast'), toastTimer = null;
+  function showToast(msg) {
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2600);
+  }
+
+  (function () {
+    if (reduceMotion || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    var btns = Array.prototype.slice.call(document.querySelectorAll('.social a'));
+    var MARGIN = 24, PULL = 0.2, MAX_X = 4, MAX_Y = 5, queued = false, lastX = 0, lastY = 0;
+    function reset(b) {
+      if (!b.classList.contains('magnet')) return;
+      b.style.setProperty('--mx', '0px');
+      b.style.setProperty('--my', '0px');
+      b.classList.remove('magnet');
+    }
+    function frame() {
+      queued = false;
+      var best = null, bestDist = Infinity;
+      btns.forEach(function (b) {
+        var r = b.getBoundingClientRect();
+        var inside = lastX > r.left - MARGIN && lastX < r.right + MARGIN && lastY > r.top - MARGIN && lastY < r.bottom + MARGIN;
+        if (!inside) return;
+        var d = Math.hypot(lastX - (r.left + r.width / 2), lastY - (r.top + r.height / 2));
+        if (d < bestDist) { bestDist = d; best = b; }
+      });
+      btns.forEach(function (b) {
+        if (b !== best) { reset(b); return; }
+        var r = b.getBoundingClientRect();
+        var dx = lastX - (r.left + r.width / 2), dy = lastY - (r.top + r.height / 2);
+        b.style.setProperty('--mx', Math.max(-MAX_X, Math.min(MAX_X, dx * PULL)) + 'px');
+        b.style.setProperty('--my', Math.max(-MAX_Y, Math.min(MAX_Y, dy * PULL)) + 'px');
+        b.classList.add('magnet');
+      });
+    }
+    window.addEventListener('mousemove', function (e) {
+      lastX = e.clientX; lastY = e.clientY;
+      if (!queued) { queued = true; requestAnimationFrame(frame); }
+    }, { passive: true });
+  })();
+
+  (function () {
+    var btn = document.querySelector('.to-top');
+    if (!btn) return;
+    var ring = btn.querySelector('.to-top-ring');
+    var C = 2 * Math.PI * 20;
+    ring.style.strokeDasharray = C;
+    function update() {
+      var h = document.documentElement;
+      var max = h.scrollHeight - h.clientHeight;
+      var p = max > 0 ? window.scrollY / max : 0;
+      ring.style.strokeDashoffset = C * (1 - p);
+      btn.classList.toggle('show', window.scrollY > window.innerHeight * 0.8);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  (function () {
+    var img = document.querySelector('.portrait');
+    if (!img) return;
+    function loaded() { img.closest('.portrait-frame').classList.add('loaded'); }
+    if (img.complete && img.naturalWidth) loaded(); else img.addEventListener('load', loaded);
+  })();
 
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('nav');
@@ -547,6 +709,23 @@
   } else {
     reveals.forEach(function (el) { el.classList.add('in'); });
   }
+  function revealInView() {
+    var h = window.innerHeight;
+    reveals.forEach(function (el) {
+      if (el.classList.contains('in')) return;
+      var r = el.getBoundingClientRect();
+      if (r.top < h && r.bottom > 0) el.classList.add('in');
+    });
+  }
+  var revealQueued = false;
+  window.addEventListener('scroll', function () {
+    if (revealQueued) return;
+    revealQueued = true;
+    setTimeout(function () { revealQueued = false; revealInView(); }, 120);
+  }, { passive: true });
+  window.addEventListener('load', revealInView);
+  window.addEventListener('hashchange', function () { setTimeout(revealInView, 50); });
+  revealInView();
 
   var links = document.querySelectorAll('.nav a');
   var sections = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute('href')); });
@@ -567,7 +746,7 @@
   window.addEventListener('scroll', setProgress, { passive: true });
   setProgress();
 
-  document.querySelectorAll('.patent-grid, .ref-grid, .split, .timeline').forEach(function (group) {
+  document.querySelectorAll('.pat-granted, .edu, .xp, .shelf, .timeline').forEach(function (group) {
     Array.prototype.forEach.call(group.children, function (el, i) {
       el.style.transitionDelay = Math.min(i, 5) * 90 + 'ms';
     });
@@ -606,11 +785,8 @@
     emailBtn.addEventListener('click', function (e) {
       e.preventDefault();
       var email = emailBtn.dataset.email;
-      var label = emailBtn.querySelector('.email-label');
       function done(ok) {
-        label.textContent = ok ? 'Copied ' + email : email;
-        emailBtn.classList.add('copied');
-        setTimeout(function () { label.textContent = 'Email'; emailBtn.classList.remove('copied'); }, 2500);
+        showToast(ok ? 'Email copied: ' + email : 'Email: ' + email);
       }
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(email).then(function () { done(true); }, function () { done(legacyCopy(email)); });
@@ -619,6 +795,107 @@
       }
     });
   }
+
+  (function () {
+    var track = document.querySelector('.ai-track');
+    if (!track) return;
+    var tabs = Array.prototype.slice.call(track.querySelectorAll('.ai-step'));
+    var aiCurrent = -1;
+    function select(i, focus) {
+      function apply() {
+        tabs.forEach(function (t, j) {
+          var on = j === i;
+          t.setAttribute('aria-selected', on);
+          t.tabIndex = on ? 0 : -1;
+          document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+        });
+        track.style.setProperty('--p', (i / (tabs.length - 1) * 100) + '%');
+      }
+      var dir = i < aiCurrent ? 'back' : 'fwd';
+      if (aiCurrent === -1 || aiCurrent === i) apply(); else withViewTransition(apply, dir);
+      aiCurrent = i;
+      if (focus) tabs[i].focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('keydown', function (e) {
+        var k = e.key, n = tabs.length;
+        if (k === 'ArrowRight' || k === 'ArrowDown') { e.preventDefault(); select((i + 1) % n, true); }
+        if (k === 'ArrowLeft' || k === 'ArrowUp') { e.preventDefault(); select((i - 1 + n) % n, true); }
+        if (k === 'Home') { e.preventDefault(); select(0, true); }
+        if (k === 'End') { e.preventDefault(); select(n - 1, true); }
+      });
+    });
+    select(tabs.length - 1);
+  })();
+
+  (function () {
+    var xp = document.querySelector('.xp');
+    if (!xp) return;
+    var rows = Array.prototype.slice.call(xp.querySelectorAll('.xp-row'));
+    function update() {
+      var r = xp.getBoundingClientRect();
+      var mid = window.innerHeight * 0.55;
+      var p = Math.min(1, Math.max(0, (mid - r.top) / r.height));
+      xp.style.setProperty('--xp', p);
+      rows.forEach(function (row) { row.classList.toggle('passed', row.getBoundingClientRect().top < mid); });
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+
+  (function () {
+    var spot = document.querySelector('.spot');
+    if (!spot) return;
+    var tabs = Array.prototype.slice.call(spot.querySelectorAll('.spot-thumb'));
+    var bar = spot.querySelector('.spot-progress span');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var current = 0, timer = null, DURATION = 18000;
+    function show(i, focus, animate) {
+      var dir = i < current ? 'back' : 'fwd';
+      function apply() {
+        tabs.forEach(function (t, j) {
+          var on = j === i;
+          t.setAttribute('aria-selected', on);
+          t.tabIndex = on ? 0 : -1;
+          t.title = on ? 'Open ' + t.dataset.name + "'s LinkedIn profile" : 'Read ' + t.dataset.name + "'s recommendation";
+          document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+        });
+      }
+      if (animate && i !== current) withViewTransition(apply, dir); else apply();
+      current = i;
+      if (focus) tabs[i].focus();
+      restartBar();
+    }
+    function restartBar() {
+      if (!bar || reduce) return;
+      bar.style.transition = 'none'; bar.style.transform = 'scaleX(0)';
+      void bar.offsetWidth;
+      bar.style.transition = 'transform ' + DURATION + 'ms linear'; bar.style.transform = 'scaleX(1)';
+    }
+    function play() { if (reduce) return; stop(); timer = setInterval(function () { show((current + 1) % tabs.length); }, DURATION); restartBar(); }
+    function stop() { clearInterval(timer); timer = null; if (bar) { bar.style.transition = 'none'; bar.style.transform = 'scaleX(0)'; } }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () {
+        if (i === current && t.dataset.href) { window.open(t.dataset.href, '_blank', 'noopener'); return; }
+        show(i, false, true); play();
+      });
+      t.addEventListener('keydown', function (e) {
+        var n = tabs.length;
+        if (e.key === 'ArrowRight') { e.preventDefault(); show((i + 1) % n, true, true); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); show((i - 1 + n) % n, true, true); }
+      });
+    });
+    spot.addEventListener('mouseenter', stop);
+    spot.addEventListener('mouseleave', play);
+    spot.addEventListener('focusin', stop);
+    spot.addEventListener('focusout', function (e) { if (!spot.contains(e.relatedTarget)) play(); });
+    show(0);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (en) { en.isIntersecting ? play() : stop(); }); }, { threshold: 0.4 }).observe(spot);
+    }
+  })();
 </script>
 </body>
 </html>
