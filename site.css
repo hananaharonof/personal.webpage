@@ -1340,3 +1340,4 @@ html[data-vt-dir="back"]::view-transition-new(learn-panel) { animation-name: vt-
   .paper-latest { margin-left: 0; }
   .paper-end { flex-direction: column; align-items: flex-start; }
 }
+
