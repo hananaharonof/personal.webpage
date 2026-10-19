@@ -17,9 +17,9 @@
   <meta property="og:type" content="profile">
   <link rel="icon" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Inconsolata&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inconsolata&display=swap">
   <script>document.documentElement.classList.replace("no-js","js");</script>
-  <link rel="stylesheet" href="site.css?v=2026-10-06b">
+  <link rel="stylesheet" href="site.css?v=2026-10-19">
 </head>
 <body>
 
@@ -33,6 +33,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#ai">AI</a></li>
+        <li><a href="#articles">Articles</a></li>
         <li><a href="#learning">Learning</a></li>
         <li><a href="#patents">Patents</a></li>
         <li><a href="#events">Events</a></li>
@@ -232,7 +233,6 @@
   <section class="section ai-band" id="ai">
     <div class="container">
       <div class="section-head reveal">
-        <span class="ai-eyebrow">A thread through my career</span>
         <h2>AI</h2>
         <p>AI has been part of my work since my first year of computer science. It started with search and constraint solving as an undergraduate, continued with classic machine learning in production at Salesforce and a master's degree centred on deep reinforcement learning, and today it means bringing large language models and agents into a production platform.</p>
       </div>
@@ -354,6 +354,33 @@
           </aside>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="section writing" id="articles">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Articles</h2>
+        <p>Long-form notes on the systems I design and the lessons that came with them.</p>
+      </div>
+
+      <article class="paper reveal">
+        <a class="paper-cover" href="https://medium.com/@hananah_41134/all-or-nothing-transactions-for-an-event-driven-platform-191d74d99697" target="_blank" rel="noopener" aria-label="Read All or Nothing on Medium">
+          <img src="img/writing/all-or-nothing.jpg" alt="" loading="lazy" decoding="async" width="1200" height="630">
+        </a>
+        <div class="paper-inner">
+          <div class="paper-kicker"><span class="paper-source"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12z"/></svg>Medium</span><span>Software architecture</span><span class="paper-latest">20 min read</span></div>
+          <h3 class="paper-title"><a href="https://medium.com/@hananah_41134/all-or-nothing-transactions-for-an-event-driven-platform-191d74d99697" target="_blank" rel="noopener">All or Nothing: Transactions for an Event-Driven Platform</a></h3>
+          <div class="paper-excerpt">
+            <p class="dropcap">In a financial system, a single lost or duplicated entry is not a small glitch. It is a number someone will have to find, explain and fix. Now picture a platform where millions of events flow through a chain of services every day, any service can be killed at any moment, and every step writes to Kafka, a database, a search index and a cache. That was the platform my team and I had built.</p>
+            <p>As a software architect, I designed and built a mechanism for exactly this problem: a transaction manager that makes each processing step all or nothing, across technologies that share no common transaction. In this article, I share that experience: the problem we faced, why the usual answers did not fit, how our solution works and what it cost us.</p>
+          </div>
+          <div class="paper-end">
+            <a class="story-cta" href="https://medium.com/@hananah_41134/all-or-nothing-transactions-for-an-event-driven-platform-191d74d99697" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12z"/></svg>Continue reading on Medium</a>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
